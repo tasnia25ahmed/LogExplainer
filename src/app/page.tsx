@@ -36,31 +36,33 @@ export default function Home() {
           <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
           AI-powered • Grounded in your team's docs
         </div>
-        <h1 className="text-4xl font-bold tracking-tight mb-3">
-          Explain any error log instantly
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3 shadow-indigo-500/30 max-w-[28rem] mx-auto">
+          <span className="text-white">Explain any </span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-700">error log instantly</span>
         </h1>
-        <p className="text-white/50 text-base max-w-lg mx-auto">
+        <p className="text-white max-w-lg mx-auto">
           Paste a stack trace, get a root cause analysis grounded in your team's runbooks and past incidents.
         </p>
       </div>
 
-      {/* Main panels */}
-      <div className="max-w-6xl mx-auto px-6 pb-16 grid grid-cols-1 lg:grid-cols-5 gap-6">
+        {/* Main panels */}
+      <div className="max-w-6xl mx-auto">
 
         {/* Left: explain */}
-        <section className="lg:col-span-3">
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 h-full">
-            <div className="flex items-center gap-2 mb-1">
-              <div className="w-2 h-2 rounded-full bg-green-400" />
-              <h2 className="text-sm font-semibold text-white/80 uppercase tracking-widest">Explain a log</h2>
-            </div>
-            <p className="text-xs text-white/30 mb-5">
-              Paste any error log or stack trace below
-            </p>
-            <LogInput team={TEAM} />
-          </div>
-        </section>
-
+  <section className="lg:col-span-2 mb-6 lg:mb-0 mx-auto px-40">
+  <div className="bg-white/5 border border-white/10 rounded-2xl p-6 h-full">
+    <div className="flex items-center gap-2 mb-1">
+      <div className="w-2 h-2 square-full bg-green-500" />
+      <h2 className="text-sm font-bold text-white uppercase tracking-widest">
+        Explain a log
+      </h2>
+    </div>
+    <p className="text-xs text-white/30 mb-5">
+      Paste any error log or stack trace below
+    </p>
+   <LogInput team={TEAM} />
+  </div>
+</section>
         {/* Right: knowledge base */}
         <section className="lg:col-span-2">
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 h-full">
