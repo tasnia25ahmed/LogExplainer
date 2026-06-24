@@ -1,4 +1,4 @@
-import { supabase } from "@/lib/supabase";
+import { supabase } from "@/libs/supabase";
 import Link from "next/link";
 
 export const revalidate = 0; // always fresh

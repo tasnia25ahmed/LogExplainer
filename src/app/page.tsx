@@ -1,6 +1,8 @@
 import LogInput from "./components/LogInput";
 import DocUploader from "./components/DocUploader";
 import Link from "next/link";
+import {Terminal} from "lucide-react";
+
 
 const TEAM = "default";
 
@@ -9,10 +11,12 @@ export default function Home() {
     <main className="min-h-screen bg-[#0f0f13] text-white">
       {/* Header */}
       <header className="border-b border-white/10 px-6 py-4 flex items-center justify-between backdrop-blur-sm sticky top-0 bg-[#0f0f13]/90 z-10">
+
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center font-bold text-sm shadow-lg shadow-indigo-500/30">
-            L
-          </div>
+          <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center font-bold text-sm shadow-lg shadow-indigo-500/30"
+              style={{ background: "linear-gradient(135deg, #1942e6e8,purple )", border: "1px solid white" }}>
+              <Terminal size={14} className="text-[white]" />
+            </div>
           <span className="font-semibold tracking-tight">LogExplainer</span>
           <span className="text-xs bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 px-2 py-0.5 rounded-full font-medium">
             Beta
